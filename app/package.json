@@ -1,9 +1,17 @@
 {
-    "name": "my-app",
-    "scripts": {
-        "dev": "nuxt"
-    },
-    "dependencies": {
-        "nuxt": "^1.4.2"
-    }
+  "name": "docker-nuxt",
+  "version": "1.0.0",
+  "description": "My laudable Nuxt.js project",
+  "author": "Daniel Roe",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
 }

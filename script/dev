@@ -11,12 +11,12 @@ containerAppDir="/srv/app"
 docker run \
 	--rm \
 	-it \
-	-p "80:80" \
+	-p "3001:80" \
 	--env "PORT=80" \
 	--env "HOST=0.0.0.0" \
 	--volume "${projectRootDir}/app:${containerAppDir}" \
 	--workdir ${containerAppDir} \
-	node:10-alpine \
-	npm run dev
+	node:14 \
+	yarn dev
 
 exit $?
